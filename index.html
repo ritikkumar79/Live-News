@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Watcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="icon" type="image" href="News Fuel-logos.jpeg">
+
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+      </div>
+      
+
+    <nav>
+
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo">
+                <img src="Assets/logo.png" alt="NEWS FUEL.logo">
+            </a>
+            <a onclick="location.reload()">
+              
+                <i id="home" class="fa-solid fa-house fa-2x" style="color:rgb(39, 39, 126)" onmouseover="this.style.color='rgb(27, 100, 202)'" onmouseout="this.style.color='rgb(39, 39, 126)'"></i>
+            </a>                      
+            <div class="nav-links ">
+                <ul class="flex">
+                    <!-- <li class="hover-links nav-items" id="ipl" onclick="onNavItemClick(`ipl`)">IPL</li> -->
+                    <li class="hover-links nav-items" id="finance" onclick="onNavItemClick(`finance`)">ECONOMICS</li>
+                    <li class="hover-links nav-items" id="politics" onclick="onNavItemClick(`politics`)">POLITICS</li>
+                    <li class="hover-links nav-items" id="defence" onclick="onNavItemClick(`defence`)">SPORTS</li>
+                </ul>
+            </div>
+            <!-- <div class="menu-toggle">
+                <i class="fas fa-bars" id="menu-icon"></i> -->
+                <!-- ............-->
+            <div class="search-bar">
+                <input type="text" class="news-input" id="search-text" placeholder="E.g :- Football">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+            <div>
+                <a id="dark-mode-toggle">
+                    <i id="moon" class="fa-solid fa-moon fa-2x"  style="color: #0c0c0c;" onmouseover="this.style.color='rgb(27, 100, 202)'" onmouseout="this.style.color=' #0c0c0c'"></i>
+                </a>
+            </div>
+            
+            <aside id="top-button" class="fixed ">
+                <a onclick="window.scroll({top:0,behavior:`smooth`})">
+                    <i class="fa-solid fa-angle-up" style="color: #ffffff;"></i>
+                </a>
+            </aside>
+        </div>
+        
+    </nav>
+    <main>
+        <marquee  id="effect" behavior="" direction="" scrollamount="10"> <h2 class="Video_head">"Watch Live News BroadCast" </h2></marquee>
+       
+        <div class="video-container">
+      
+            <div class="frame">
+           
+            <iframe  width="420" height="315" src="https://www.youtube.com/embed/w57Mp0dEpTw?si=l21bl4Z7Pys-0vG3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="frame">
+            <iframe  width="420" height="315" src="https://www.youtube.com/embed/BkJzcDko5gU?si=DxReq3OKbOZaglTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="frame">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/ZwD3-hUQ3rk?si=W4fJTB94lCcuPK5V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </div>
+        </div>
+        
+
+        
+        <div class="card-container container flex" id="card-container">
+           
+        </div>
+    </main>
+        <template id="template-news-card">
+        <div class="card" id="card">
+        <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+        </div>
+        <div class="card-content">
+            <h3 id="news-title">This is the Title</h3>
+            <h6 class="news-source" id="news-source">End Gadget 25/08/2023</h6>
+            <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic obcaecati pariatur quaerat quidem iste temporibus voluptatem laudantium sunt voluptates quam.</p>
+        </div>
+        </div>
+        </template>
+
+        <footer>
+            <div id="developedBy">
+                Developed by Ritik Kumar 
+            </div>
+        </footer>
+    
+</body>
+
+    <script src="script.js"></script>
+</html>
